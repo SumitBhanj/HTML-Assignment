@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>University Course Registration Form</title>
+</head>
+<body>
+
+  <h1>University Course Registration Form</h1>
+    
+  <form>
+    <fieldset>
+      <legend><h2>Personal Details</h2></legend>
+
+      <label for="fullname">Full Name:</label><br>
+      <input type="text" id="fullname" name="fullname" required><br><br>
+
+      <label for="studentid">Student ID:</label><br>
+      <input type="text" id="studentid" name="studentid" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone" required><br><br>
+
+      Gender:<br>
+      <input type="radio" id="male" name="gender" value="Male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="Other">
+      <label for="other">Other</label><br><br>
+
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob" required><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend><h2>Academic Information</h2></legend>
+
+      <label for="department">Department:</label><br>
+      <select id="department" name="department" required>
+        <option value="">--Select Department--</option>
+        <option value="cse">Computer Science</option>
+        <option value="ece">Electronics</option>
+        <option value="me">Mechanical</option>
+        <option value="ce">Civil</option>
+        <option value="ee">Electrical</option>
+      </select><br><br>
+
+      <label for="semester">Current Semester:</label><br>
+      <select id="semester" name="semester" required>
+        <option value="">--Select Semester--</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select><br><br>
+
+      <label for="cgpa">Current CGPA:</label><br>
+      <input type="number" id="cgpa" name="cgpa" step="0.01" min="0" max="10" required><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend><h2>Course Selection (Select up to 3 Core and 3 Elective)</h2></legend>
+
+      <p><strong>Core Courses:</strong></p>
+
+      <input type="checkbox" id="core1" name="courses" value="CS101">
+      <label for="core1">CS101 - Data Structures (3 Credits)</label><br>
+
+      <input type="checkbox" id="core2" name="courses" value="CS102">
+      <label for="core2">CS102 - Algorithms (4 Credits)</label><br>
+
+      <input type="checkbox" id="core3" name="courses" value="CS103">
+      <label for="core3">CS103 - Computer Networks (3 Credits)</label><br>
+
+      <input type="checkbox" id="core4" name="courses" value="CS104">
+      <label for="core4">CS104 - Data Base (4 Credits)</label><br><br>
+
+      <p><strong>Elective Courses:</strong></p>
+
+      <input type="checkbox" id="elec1" name="courses" value="CS201">
+      <label for="elec1">CS201 - Machine Learning (3 Credits)</label><br>
+
+      <input type="checkbox" id="elec2" name="courses" value="CS202">
+      <label for="elec2">CS202 - Cyber Security (3 Credits)</label><br>
+
+      <input type="checkbox" id="elec3" name="courses" value="CS203">
+      <label for="elec3">CS203 - Cloud Computing (3 Credits)</label><br>
+
+      <input type="checkbox" id="elec4" name="courses" value="CS204">
+      <label for="elec4">CS204 - Artificial Intelligence (3 Credits)</label><br>
+    </fieldset>
+
+    <fieldset>
+      <legend><h2>Mode of Learning</h2></legend>
+
+      <label>Enrollment Type:</label><br>
+      <input type="radio" id="fulltime" name="enrollment" value="Full Time" required>
+      <label for="fulltime">Full Time</label>
+      <input type="radio" id="parttime" name="enrollment" value="Part Time">
+      <label for="parttime">Part Time</label><br><br>
+
+      <label>Preferred Class Timing:</label><br>
+      <input type="radio" id="morning" name="timing" value="Morning" required>
+      <label for="morning">Morning</label>
+      <input type="radio" id="evening" name="timing" value="Evening">
+      <label for="evening">Evening</label><br>
+    </fieldset>
+
+    <fieldset>
+      <legend><h2>Upload Documents</h2></legend>
+
+      <label for="idproof">Upload Student ID Proof:</label><br>
+      <input type="file" id="idproof" name="idproof" required><br><br>
+
+      <label for="gradesheet">Upload Previous Semester Grade Report:</label><br>
+      <input type="file" id="gradesheet" name="gradesheet" required><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend><h2>Terms and Conditions</h2></legend>
+
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms">I accept the university's regulations.</label><br><br>
+
+      <input type="checkbox" id="declaration" name="declaration" required>
+      <label for="declaration">I hereby declare that the information provided is true and correct.</label><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend><h2>Submit</h2></legend>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </fieldset>
+
+  </form>
+
+</body>
+</html>

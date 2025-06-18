@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="icon" type="image/jpg" href="Logo.jpg">
+</head>
+<body>
+
+  <div align="center">
+    <img src="Logo.jpg" width="70" height="70" alt="Logo">
+    <br>
+  </div>
+  <div>
+    <img src="Banner.jpg" width="1256" height="280" alt="Banner">
+  </div>
+    
+  
+
+  <h2>User Registration Form</h2>
+
+  <form>
+
+    <table>
+        <tr>
+            <td>
+                <label>First Name:</label><br>
+                <input type="text" name="fname" required><br><br>
+            </td>
+            <td>
+                <label>Middle Name:</label><br>
+                <input type="text" name="mname"><br><br>
+            </td>
+            <td>
+                <label>Last Name:</label><br>
+                <input type="text" name="lname" required><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Email:</label><br>
+                <input type="email" name="email" required><br><br>
+            </td>
+            <td>
+                <label>Phone Number:</label><br>
+                <input type="tel" name="phone" required><br><br>
+            </td>
+            <td>
+                <label>Password:</label><br>
+                <input type="password" name="password" required><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Date of Birth:</label><br>
+                <input type="date" name="dob" required><br><br>
+            </td>
+            <td>
+                <label>Gender:</label><br>
+                <select name="gender" required>
+                    <option value="">--Select--</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select><br><br>
+            </td>
+        </tr>
+    </table>
+
+
+    
+    <h3>Current Address</h3>
+    <label>Street:</label><br>
+    <input type="text" name="currStreet"><br><br>
+
+    <label>City:</label><br>
+    <input type="text" name="currCity"><br><br>
+
+    <label>State:</label><br>
+    <input type="text" name="currState"><br><br>
+
+    <label>Country:</label><br>
+    <input type="text" name="currCountry"><br><br>
+
+    <label>Zip Code:</label><br>
+    <input type="text" name="currZip"><br><br>
+
+    <!-- Permanent Address -->
+    <h3>Permanent Address</h3>
+
+    <label>Street:</label><br>
+    <input type="text" name="permStreet"><br><br>
+
+    <label>City:</label><br>
+    <input type="text" name="permCity"><br><br>
+
+    <label>State:</label><br>
+    <input type="text" name="permState"><br><br>
+
+    <label>Country:</label><br>
+    <input type="text" name="permCountry"><br><br>
+
+    <label>Zip Code:</label><br>
+    <input type="text" name="permZip"><br><br>
+
+    <h3>Personal Interests</h3>
+    <label><input type="checkbox" name="interests" value="Sports"> Sports</label><br>
+    <label><input type="checkbox" name="interests" value="Books"> Books</label><br>
+    <label><input type="checkbox" name="interests" value="Computers"> Computers & Software</label><br>
+    <label><input type="checkbox" name="interests" value="Fashion"> Fashion</label><br>
+    <label><input type="checkbox" name="interests" value="Geopolitics"> Geopolitics</label><br>
+    <label><input type="checkbox" name="interests" value="Music"> Music</label><br>
+    <label><input type="checkbox" name="interests" value="Fitness"> Fitness</label><br>
+    <label><input type="checkbox" name="interests" value="Gaming"> Gaming</label><br><br>
+
+    <input type="submit" value="Register">
+
+  </form>
+
+</body>
+</html>

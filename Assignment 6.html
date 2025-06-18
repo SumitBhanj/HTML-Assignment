@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Doctor Appointment Form</title>
+</head>
+<body>
+
+<table cellspacing="20">
+  <tr>
+    <td>
+      <img src="Doctor.jpg" alt="Doctor Image" width="500">
+    </td>
+
+    <td>
+      <table cellpadding="8">
+        <tr>
+          <td colspan="3" align="center">
+            <h2>Doctor Appointment Form</h2>
+            <hr style="border-color: red;">
+          </td>
+        </tr>
+
+        <tr>
+          <td>Appointment Date</td>
+          <td><input type="date"></td>
+        </tr>
+
+        <tr>
+          <td>Appointment Time</td>
+          <td><input type="time"></td>
+        </tr>
+
+        <tr>
+          <td>Name</td>
+          <td><input type="text" placeholder="First"></td>
+          <td><input type="text" placeholder="Last"></td>
+        </tr>
+
+        <tr>
+          <td>Gender</td>
+          <td colspan="2">
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+          </td>
+        </tr>
+
+        <tr>
+          <td>Phone</td>
+          <td colspan="2"><input type="tel" placeholder="####"></td>
+        </tr>
+
+        <tr>
+          <td>Address</td>
+          <td><input type="text" placeholder="city"></td>
+          <td><input type="text" placeholder="state"></td>
+        </tr>
+
+        <tr>
+          <td>Your Query</td>
+          <td colspan="2">
+            <textarea rows="4" cols="40"></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Appointment Type</td>
+          <td colspan="2">
+            Select which appointment type(s) you require<br>
+            <input type="checkbox"> Cervix checkup<br>
+            <input type="checkbox"> Heart checkup<br>
+            <input type="checkbox"> Eye check-up<br>
+            <input type="checkbox"> Hearing Test<br>
+          </td>
+        </tr>
+
+        <tr>
+            <td colspan="1"></td>
+          <td colspan="3">
+            <input type="submit" value="Send">
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
